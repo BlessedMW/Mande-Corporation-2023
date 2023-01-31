@@ -1,0 +1,31 @@
+meta(charset="utf-8")
+meta(name="viewport", content="width=device-width,initial-scale=1,shrink-to-fit=no")
+title Solicitar Servicio
+link(rel="stylesheet", href="./bootstrap/css/bootstrap.min.css")
+link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Anaheim&display=swap")
+link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Lora")
+link(rel="stylesheet", href="./fonts/font-awesome.min.css")
+link(rel="stylesheet", href="./fonts/ionicons.min.css")
+link(rel="stylesheet", href="./css/styles.min.css")
+link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")
+.container(style="background-image: url(./resources/solicitud.png);margin-top: 30px;")
+  div
+    .container
+      .row
+        .col-md-6
+          ul.nav.nav-tabs
+            li.nav-item
+              button.btn.btn-primary(type="button", style="background:blue;margin-top: 5px;") FILTRAR
+            li.nav-item
+              input(type="text", data-role="tagsinput", data-class="label-info", placeholder="Añadir filtro", style="margin-top: 8px;")
+          div Custom Code
+        .col-md-6
+          // Mapa
+          h1.text-center Mapa
+          iframe(allowfullscreen, frameborder="0", loading="lazy", src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBqS_VlCbrd4cI9yBmHY_lMGlytIc1fjvY&q=Cali%2C+Colombia&zoom=11", width="100%", height="400")
+        .col
+          a.btn.btn-primary(role="button", style="margin: 20px;background: var(--bs-white);color: black;", href="./usuario.html")
+            i.icon.ion-arrow-return-left(style="margin-right: 10px;")
+            | ATRAS
+script(src="./bootstrap/js/bootstrap.min.js")
+script(src="./js/script.min.js")

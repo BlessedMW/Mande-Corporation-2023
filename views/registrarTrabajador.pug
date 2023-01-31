@@ -1,0 +1,70 @@
+meta(charset="utf-8")
+meta(name="viewport", content="width=device-width,initial-scale=1,shrink-to-fit=no")
+title Registro - Trabajador
+link(rel="stylesheet", href="./bootstrap/css/bootstrap.min.css")
+link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Anaheim&display=swap")
+link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Lora")
+link(rel="stylesheet", href="./fonts/font-awesome.min.css")
+link(rel="stylesheet", href="./fonts/ionicons.min.css")
+link(rel="stylesheet", href="./css/styles.min.css")
+link(rel="stylesheet", href="./css/stilosRegistros.css")
+link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")
+section.position-relative.py-4.py-xl-5(style="background-image:url(./resources/fondo_registro.png);height: 100%;")
+  .container.bg-white(style="padding-top: 10px;padding-bottom: 40px;margin-right: 12px;margin-left: 12px;padding-left: 6px;padding-right: 6px;background-image: url(./resources/fondo_registro2.png)")
+    .row
+      .col-10.col-sm-10.col-md-10.offset-1.offset-sm-1.offset-md-1.text-start.align-content-md-center
+        form(method="post")
+          .form-group.mb-3
+            label.form-label(style="margin-bottom: 10px;color: white;")
+              strong Nombre
+            input.form-control#nombre(type="text", style="margin-bottom: 20px;", placeholder="Ingrese su nombre")
+          .form-group.mb-3
+            label.form-label(style="margin-bottom: 10px;margin-top: 10px;color: white;")
+              strong Apellido
+            input.form-control#apellido(type="text", style="margin-bottom: 20px;", placeholder="Ingrese su apellido")
+          .form-group.mb-3
+            label.form-label(style="margin-bottom: 10px;margin-top: 10px;color:white;")
+              strong Contraseña
+              br
+            input.form-control#password(type="password", placeholder="Ingrese su contraseña", style="margin-bottom: 20px;", onchange="changePassword();")
+          .form-group.mb-3
+            label.form-label(style="margin-bottom: 10px;margin-top: 10px;color: white;")
+              strong Dirección
+              br
+            input.form-control#direccion(type="text", placeholder="Ingrese su dirección", style="margin-bottom: 20px;", onchange="changePassword();")
+          div
+            label.form-label(style="margin-bottom: 10px;margin-top: 10px;color:white;")
+              strong Cargar foto:
+              br
+            input.form-control(type="file")
+          // aqui aparte de pedir una foto para la foto de perfil tambien pedimos una imagen de su DNI 
+          div
+            label.form-label(style="margin-bottom: 10px;margin-top: 10px;color: white;")
+              strong Cargar foto del DNI:
+              br
+            input.form-control(type="file")
+          .form-group.mb-3
+            label.form-label(style="margin-bottom: 10px;margin-top: 10px;color: white;")
+              strong Servicio
+              br
+            input.form-control#labores(type="text", data-role="tagsinput", data-class="label-info", placeholder="Servicio que ofrece")
+          .form-group.mb-3
+            label.form-label(style="margin-bottom: 10px;margin-top: 10px;color:white;")
+              strong Precio por servicio/hora
+              br
+            input.form-control#infoPrecios(type="text", placeholder="Precio en pesos colombianos", style="margin-bottom: 30px;", onchange="changePassword();")
+          .form-group.mb-3
+            label.form-label(style="margin-bottom: 10px;margin-top: 10px;color: white;")
+              strong Número de Celular
+              br
+            input.form-control#celular(type="text", placeholder="Ingrese su numero de celular", style="margin-bottom: 20px;", onchange="changePassword();")
+          // en este enlace se utilizo para acceder a los otros html minetras se les coloca el enlace donde corresponden (al de ingresar html )
+          p
+            a(href="./ingresar.html") ¿tengo cuenta?
+          .row
+            .col-md-6(style="margin-top: 20px;")
+              a.btn.btn-secondary.d-block.d-lg-flex.justify-content-lg-center.w-100(role="button", href="./registrar.html", style="background: var(--bs-gray);") CANCELAR
+            .col-md-6(style="margin-top: 20px;")
+              a.btn.btn-primary.d-block.d-lg-flex.justify-content-lg-center.w-100#submitButton(role="button", href="./ingresarTrabajador.html", style="background: var(--bs-gray);") ACEPTAR
+  script(src="./bootstrap/js/bootstrap.min.js")
+  script(src="./js/script.min.js")

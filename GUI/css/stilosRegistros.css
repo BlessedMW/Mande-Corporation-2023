@@ -1,0 +1,35 @@
+    
+/*en esta parte colocaremos todo lo referente a nuestro formulario de registro  de usuario y trabajador */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+
+/*aqui le decimos las caracteristicas que queremos en nuestro formulario de registro */
+.form-control {
+
+  width: 400px;
+  background: #dfc8ea;
+  box-shadow: 7px 13px 37px #4b4949;
+  
+}
+
+.post{
+   width: 400px;
+  background: #dfc8ea;
+  box-shadow: 7px 13px 37px #4b4949;
+}
+
+
+.container bg-white{
+  
+  width: 400px;
+  background: #dfc8ea;
+  box-shadow: 7px 13px 37px #4b4949;
+  
+}
+

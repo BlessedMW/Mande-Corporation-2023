@@ -1,0 +1,36 @@
+meta(charset="utf-8")
+meta(name="viewport", content="width=device-width,initial-scale=1,shrink-to-fit=no")
+title Cambiar servicio
+link(rel="stylesheet", href="./bootstrap/css/bootstrap.min.css")
+link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Anaheim&display=swap")
+link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Lora")
+link(rel="stylesheet", href="./fonts/font-awesome.min.css")
+link(rel="stylesheet", href="./fonts/ionicons.min.css")
+link(rel="stylesheet", href="./css/styles.min.css")
+link(rel="stylesheet", href="./css/stilosRegistros.css")
+link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")
+center
+  h1(style="color: black;margin-left: 20px;margin-top: 20px;") Cambio de labor
+.container.bg-white(style="padding-top: 10px;padding-bottom: 40px;margin-right: 12px;margin-left: 12px;padding-left: 6px;padding-right: 6px;background-image: url(./resources/contraseñas1.png);")
+  .row
+    .col-10.col-sm-10.col-md-10.offset-1.offset-sm-1.offset-md-1.text-start.align-content-md-center
+      form(method="post")
+        .form-group.mb-3
+          label.form-label(style="margin-bottom: 10px;margin-top: 10px;color: white;")
+            strong Servicio
+            br
+          input.form-control(type="text", data-role="tagsinput", data-class="label-info", placeholder="Servicio que ofrece")
+        .form-group.mb-3
+          label.form-label(style="margin-bottom: 10px;margin-top: 10px;color: white;")
+            strong Precio por servicio/hora
+            br
+          input.form-control(type="text", placeholder="Precio en pesos colombianos", style="margin-bottom: 20px;", onchange="changePassword();")
+        .row
+          .col-md-6(style="margin-top: 20px;")
+            a.btn.btn-primary.d-block.d-lg-flex.justify-content-lg-center.w-100#submitButton(role="button", href="./trabajador.html", style="background: blue;") ACEPTAR
+          .col-md-6(style="margin-top: 20px;")
+            a.btn.btn-primary(role="button", style="color: black;background: white;", href="./configTrabajador.html")
+              i.icon.ion-arrow-return-left(style="margin-right: 10px;")
+              | ATRAS
+script(src="./bootstrap/js/bootstrap.min.js")
+script(src="./js/script.min.js")

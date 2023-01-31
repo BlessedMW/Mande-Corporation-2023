@@ -1,0 +1,95 @@
+meta(charset="utf-8")
+meta(name="viewport", content="width=device-width")
+title Mande Corporation
+link(href="./css/styleIndex.css", rel="stylesheet", type="text/css")
+header
+  .container__header
+    .logo
+      img(src="./resources/logo.png", .alt)
+    .menu
+      nav
+        ul
+          // en esta parte lo que declaramos son los botones que al mismo tiempo estos mismos nos dirijan a una parte de nuestra pagina para que nos muestre la informacion necesaria 
+          li
+            a(href="#texto_informacion3") OBJECTIVOS
+          li
+            a(href="#texto_informacion2") QUIENES SOMOS 
+          li
+            a(href="#texto_informacion4") QUE OFRECEMOS 
+    a(href="./registrar.html")
+      .registro
+        input.btn_header(type="button", value="REGISTRARSE")
+    a(href="./ingresar.html")
+      .ingresar
+        input.btn_header(type="button", value="INGRESAR")
+main
+  .cover
+    .texto_informacion1
+      p
+        | 
+“
+        b PIENSA EN GRANDE
+        |  RECONOCERÁS TUS HABILIDADES Y TALENTOS; PODRÁS SOLUCIONAR RETOS DE TU ENTORNO A PARTIR DE LA UNIÓN DE ESFUERZOS, SABERES, EXPERIENCIAS, HABILIDADES E INTERESES. 
+        b DESARROLLARÁS LA INNOVACIÓN Y CREATIVIDADE
+        |  POR MEDIO DE LA CO-CREACIÓN DE UNA INICIATIVA CON IMPACTO SOCIAL Y APROPIARÁS ELEMENTOS CLAVES PARA LOGRAR SU MATERIALIZACIÓN ”
+
+    .figure
+      // en esta parte colocamos nuestra primer imgaen del texto anterior que nos da una breve descricion que le da una idea del sitio al usuario 
+      img(src="./resources/pagina_Texto1.png", width="500", height="400")
+  .cover2
+    .figura2
+      img(src="./resources/pagina_Texto2.png", width="600", height="600")
+    .texto_informacion2#texto_informacion2
+      center
+        h1 QUIENES SOMOS
+      p.
+        
+        “SOMOS UN EMPRESA SIN FINES DE LUCRO CON EL OBJETIVO DE INCENTIVAR LA EMPLEABILIDAD A PERSONAS QUE REQUIEREN TENER UN INGRESO EXTRA CUMPLIENDO CON LO QUE UNA PERSONA O COMUNIDAD NECESITE, TRATANDO DE DARTE LA OPORTUNIDAD, DADO LA TASA DE DESEMPLEO NACIONAL A DEDICARTE A ESO QUE TANTO DE APASIONA, DONDE TU COLOCAS LE DAS EL VALOR A TU TRABAJO, NOSOTROS NOS ENCARGAMOS DÁNDOTE A CONOCER A TI, NO SOLO COMO PROFESIONAL SINO TAMBIÉN COMO UNA PERSONA CAPACITADA Y COMPETENTE AYUDANDO A IMPULSARTE DE MANERA FÁCIL Y SENCILLA DONDE PUEDAS CUMPLIR TU SUEÑO"
+        
+  .cover3
+    .texto_informacion3#texto_informacion3
+      center
+        h1
+          | NUESTROS PRINCIPALES
+          br
+          | 
+OBJECTIVOS
+
+      center
+        p
+          | 
+1-EL EMPLEO INCLUSIVO
+          br
+          | 
+2-FOMENTAR EL EMPLEO DE CALIDAD
+          br
+          | 
+3-PROMOVER EL CRECIMIENTO ECONÓMICO SOSTENIDO
+          br
+    .figura3
+      img(src="./resources/pagina_Texto3.png", width="600", height="500")
+  .cover4
+    .figura4
+      img(src="./resources/pagina_Texto4.png", width="500", height="400")
+    .texto_informacion4#texto_informacion4
+      center
+        h1 QUE OFRECEMOS
+      p.
+        
+        LES OFRECEMOS A TODOS LOS EMPLEADOS, SIN IMPORTAR EL CARGO O RESPONSABILIDAD QUE OCUPEN, TENER COMO MAYOR PRIORIDAD EL DESARROLLO, ÉXITO Y CONTINUIDAD DE EN EL ÁREA EN EL CUAL ES PROFESIONAL PARA QUE TRABAJEN EN CONJUNTO EN LA CONSTRUCCIÓN DE UNA COMUNIDAD QUE PROMUEVA Y AUMENTE LAS INVERSIONES EN INFRAESTRUCTURA, INVESTIGACIÓN Y DESARROLLO
+        
+  .cover5
+    img(src="./resources/imagen_pie_pagina.png", width="560", height="300", hspace="300", vspace="300")
+    img(src="./resources/imagen_pie_pagina2.png", width="560", height="300", hspace="300", vspace="300")
+script(src="https://cdnjs.cloudflare.com/ajax/libs/create-react-class/15.7.0/create-react-class.min.js")
+script(src="https://cdnjs.cloudflare.com/ajax/libs/react-is/18.2.0/umd/react-is.production.min.js")
+script(src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js")
+script(src="https://cdnjs.cloudflare.com/ajax/libs/postgrest-client/1.1.2/postgrest-client.min.js")
+script(src="./js/scriptIndex.js")
+//
+  
+    This script places a badge on your repl's full-browser view back to your repl's cover
+    page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+    teal, blue, blurple, magenta, pink!
+    
+script(src="https://replit.com/public/js/replit-badge.js", theme="blue", defer)

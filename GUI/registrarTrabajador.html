@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Registro - Trabajador</title>
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anaheim&amp;display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+  <link rel="stylesheet" href="./fonts/font-awesome.min.css">
+  <link rel="stylesheet" href="./fonts/ionicons.min.css">
+  <link rel="stylesheet" href="./css/styles.min.css">
+  <link rel="stylesheet" href="./css/stilosRegistros.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+
+<body style="background: var(--bs-gray-200);height: 1000px;">
+  <section class="position-relative py-4 py-xl-5"
+    style="background-image:url(./resources/fondo_registro.png);height: 100%;">
+    <div class="container bg-white"
+      style="padding-top: 10px;padding-bottom: 40px;margin-right: 12px;margin-left: 12px;padding-left: 6px;padding-right: 6px;background-image: url(./resources/fondo_registro2.png)">
+      <div class="row">
+        <div class="col-10 col-sm-10 col-md-10 offset-1 offset-sm-1 offset-md-1 text-start align-content-md-center">
+          <form method="post">
+            <div class="form-group mb-3">
+              <label class="form-label" style="margin-bottom: 10px;color: white;"><strong>Nombre</strong>
+              </label>
+              <input class="form-control" type="text" id="nombre" style="margin-bottom: 20px;"
+                placeholder="Ingrese su nombre">
+            </div>
+            <div class="form-group mb-3">
+              <label class="form-label"
+                style="margin-bottom: 10px;margin-top: 10px;color: white;"><strong>Apellido</strong>
+              </label>
+              <input class="form-control" type="text" id="apellido" style="margin-bottom: 20px;"
+                placeholder="Ingrese su apellido">
+            </div>
+            <div class="form-group mb-3">
+              <label class="form-label"
+                style="margin-bottom: 10px;margin-top: 10px;color:white;"><strong>Contraseña</strong>
+                <br>
+              </label>
+              <input class="form-control" type="password" id="password" placeholder="Ingrese su contraseña"
+                style="margin-bottom: 20px;" onchange="changePassword();">
+            </div>
+            <div class="form-group mb-3">
+              <label class="form-label"
+                style="margin-bottom: 10px;margin-top: 10px;color: white;"><strong>Dirección</strong>
+                <br>
+              </label>
+              <input class="form-control" type="text" id="direccion" placeholder="Ingrese su dirección"
+                style="margin-bottom: 20px;" onchange="changePassword();">
+            </div>
+            <div>
+              <label class="form-label" style="margin-bottom: 10px;margin-top: 10px;color:white;"><strong>Cargar
+                  foto:</strong>
+                <br>
+              </label>
+              <input class="form-control" type="file">
+            </div>
+            <!--aqui aparte de pedir una foto para la foto de perfil tambien pedimos una imagen de su DNI -->
+  <div>
+              <label class="form-label" style="margin-bottom: 10px;margin-top: 10px;color: white;"><strong>Cargar
+                  foto del DNI:</strong>
+                <br>
+              </label>
+              <input class="form-control" type="file">
+            </div>
+            
+            <div class="form-group mb-3">
+              <label class="form-label"
+                style="margin-bottom: 10px;margin-top: 10px;color: white;"><strong>Servicio</strong>
+                <br>
+              </label>
+              <input class="form-control" type="text" id="labores" data-role="tagsinput" data-class="label-info"
+                placeholder="Servicio que ofrece">
+            </div>
+            <div class="form-group mb-3">
+              <label class="form-label" style="margin-bottom: 10px;margin-top: 10px;color:white;"><strong>Precio por
+                  servicio/hora</strong>
+                <br>
+              </label>
+              <input class="form-control" type="text" id="infoPrecios" placeholder="Precio en pesos colombianos"
+                style="margin-bottom: 30px;" onchange="changePassword();">
+            </div>
+            <div class="form-group mb-3">
+              <label class="form-label" style="margin-bottom: 10px;margin-top: 10px;color: white;"><strong>Número de
+                  Celular</strong>
+                <br>
+              </label>
+              <input class="form-control" type="text" id="celular" placeholder="Ingrese su numero de celular"
+                style="margin-bottom: 20px;" onchange="changePassword();">
+            </div>
+            <!--en este enlace se utilizo para acceder a los otros html minetras se les coloca el enlace donde corresponden (al de ingresar html )-->
+             <p><a href="./ingresar.html" >¿tengo cuenta? </a></p>
+            <div class="row">
+              <div class="col-md-6" style="margin-top: 20px;"><a
+                  class="btn btn-secondary d-block d-lg-flex justify-content-lg-center w-100" role="button"
+                  href="./registrar.html" style="background: var(--bs-gray);">CANCELAR</a>
+              </div>
+              <div class="col-md-6" style="margin-top: 20px;"><a
+                  class="btn btn-primary d-block d-lg-flex justify-content-lg-center w-100" role="button"
+                  id="submitButton" href="./ingresarTrabajador.html" style="background: var(--bs-gray);">ACEPTAR</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/script.min.js"></script>
+</body>
+
+</html>

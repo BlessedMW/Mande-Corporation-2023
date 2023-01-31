@@ -1,0 +1,43 @@
+meta(charset="utf-8")
+meta(name="viewport", content="width=device-width,initial-scale=1,shrink-to-fit=no")
+title Cambiar Metodo de Pago
+link(rel="stylesheet", href="./bootstrap/css/bootstrap.min.css")
+link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Anaheim&display=swap")
+link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Lora")
+link(rel="stylesheet", href="./fonts/font-awesome.min.css")
+link(rel="stylesheet", href="./fonts/ionicons.min.css")
+link(rel="stylesheet", href="./css/styles.min.css")
+link(rel="stylesheet", href="./css/stilosRegistros.css")
+link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")
+.container.bg-white(style="padding-top: 10px;padding-bottom: 40px;margin-right: 12px;margin-left: 12px;padding-left: 6px;padding-right: 6px;margin-top: 12px;background-image: url(./resources/fondo_registrar2_2.png)")
+  .row
+    .col-10.col-sm-10.col-md-10.offset-1.offset-sm-1.offset-md-1.text-start.align-content-md-center
+      form(method="post")
+        h1(style="color: white;margin-left: 20px;margin-top: 20px;") Metodo de Pago
+        .form-group.mb-3
+          label.form-label(style="margin-bottom: 10px;color: white;")
+            strong Tarjeta de
+          .form-check
+            input.form-check-input#formCheck-3(type="radio")
+            label.form-check-label(for="formCheck-3") Crédito
+          .form-check
+            input.form-check-input#formCheck-1(type="radio")
+            label.form-check-label(for="formCheck-1") Débito
+        .form-group.mb-3
+          label.form-label(style="margin-bottom: 10px;margin-top: 10px;color: white;")
+            strong Número de Tarjeta
+          input.form-control(type="number", style="margin-bottom: 20px;", placeholder="Ingrese el número de su tarjeta")
+        .form-group.mb-3
+          label.form-label(style="margin-bottom: 10px;margin-top: 10px;color: white;")
+            strong CVV
+            br
+          input.form-control#password(type="text", placeholder="Ingrese el código CVV de la tarjeta", style="margin-bottom: 20px;", onchange="changePassword();")
+        .row
+          .col-md-6(style="margin-top: 20px;")
+            a.btn.btn-primary.d-block.d-lg-flex.justify-content-lg-center.w-100#submitButton(role="button", href="./usuario.html", style="background: blue;") ACEPTAR
+          .col-md-6(style="margin-top: 20px;")
+            a.btn.btn-primary(role="button", style="color: var(--bs-gray);background: var(--bs-white);", href="./configUsuario.html")
+              i.icon.ion-arrow-return-left(style="margin-right: 10px;")
+              | ATRAS
+script(src="./bootstrap/js/bootstrap.min.js")
+script(src="./js/script.min.js")

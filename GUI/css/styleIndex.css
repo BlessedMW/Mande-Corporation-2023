@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+/*a continuacion el codigo lo unico que hace es acomodar los elementos dandoles un formato, como la posicion, el color, el tamaño etc*/
+/*///////////////////////////////////////////////////////////////////*/
+
+/*ahora en medio de nuestras declaraciones de personalizacion de nuestra pagina, debemos de crear una instancia que nos permita dar los saltos de los botones con una transicion */
+
+html{
+  scroll-behavior: smooth;
+}
+
+/*una vez que hemos importado la fuente que es el formato del texto que estaremos utilizamos en nuestra web, y le colocaremos personalizaremos uestros componentes de nuestra pagina donde los personalizaremos como lo que son que sean centrados, opacos y que al mismo tiempo se diferencien los botones de registro y de ingresar de los demas botones que se encuentran en el contenedro para la navegacion del usuario por nuestra interfaz */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: Oswald,sans-serif;
+}
+/*
+aqui lo que hacemos es personalizar el encabezado donde se encuentra nuestrro menu 
+*/
+header{
+  
+width: 100%;
+  height: 90px;
+
+}
+
+ body {
+   margin: auto;
+   margin-top: 20px;
+  height: 100%;
+  width: 100%;
+  background: #c4c4f6;
+  
+}
+
+
+.container__header{
+  max-width: 1200px;
+  height: 1%;
+  margin: 1%;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img{
+  width: 140px;
+}
+
+.nav-item{
+  width: 60px;
+  
+}
+/**/
+.logo_usuario img{
+   justify-content: space-between;
+  width: 80px;
+}
+
+
+.menu nav ul{
+  display: flex;
+}
+
+.menu nav ul li{
+  list-style: none;
+  padding: 0px 20px;
+}
+
+.menu nav ul li a{
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+  transition: opacity 300ms;
+}
+
+.menu{
+  opacity: 0.6;
+}
+
+.registro{
+  border: none;
+  padding: 15px 50px;
+  background:#e5e5e5;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background,color,300ms;
+}
+.menu:hover{
+  background: #5b32cd;
+}
+.registro:hover{
+  
+  background: #6f3ebb;
+  
+}
+
+
+.ingresar{
+  padding: 15px 50px;
+  border: none;
+  background:#e5e5e5;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background,color,300ms;
+
+}
+.ingresar:hover{
+  background: #6f3ebb;
+ 
+}
+
+
+/*ahora acomodaremos el texto y el el resto del contenido de nuestra pagina para que esra se vea mas organizada */
+main{
+   max-width: 1200;
+   height: calc(100vh + 800px);
+   padding: 40px;
+   margin: auto;
+
+}
+
+.cover{
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  
+}
+
+
+
+.texto_informacion1{
+  width:190%;
+}
+.texto_informacion1 h1{
+  width:90%;
+  
+}
+
+.texto_informacion1 p{
+  font-size: 30px;
+  margin-top: 90px;
+  
+}
+
+/*colocamos nuestro segundo texto que describe el "quines somos " de la pagina web */
+.cover2{
+  
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  
+}
+
+.texto_informacion2{
+  width:190%;
+
+}
+.texto_informacion2 h1{
+  width:90%
+  
+}
+
+.texto_informacion2 p{
+  font-size: 30px;
+  /*desplaza el texto hacia arriba */  
+  margin-top: 20px;
+
+}
+
+.cover3{
+  display: flex;
+  justify-content: center;
+  margin-top:80px;
+  
+  
+}
+
+
+.texto_informacion3{
+  width:190%;
+
+}
+.texto_informacion3 h1{
+  width:90%
+  
+}
+
+.texto_informacion3 p{
+  font-size: 28px;
+  /*desplaza el texto hacia arriba */  
+  margin-top: 40px;
+
+}
+
+
+
+
+
+.cover4{
+  display: flex;
+  justify-content: center;
+  margin-top:80px;
+  
+  
+}
+
+
+.texto_informacion4{
+  width:190%;
+
+}
+.texto_informacion4 h1{
+  width:90%
+  
+}
+
+.texto_informacion4 p{
+  font-size: 30px;
+  /*desplaza el texto hacia arriba */  
+  margin-top: 40px;
+
+}
+  
+.cover5{
+  margin-top:50px;
+}
+
+
+
+
+
+
+
+
+

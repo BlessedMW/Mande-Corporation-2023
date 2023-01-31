@@ -1,0 +1,32 @@
+meta(charset="utf-8")
+meta(name="viewport", content="width=device-width,initial-scale=1,shrink-to-fit=no")
+title Ingresar - Trabajador
+link(rel="stylesheet", href="./bootstrap/css/bootstrap.min.css")
+link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Anaheim&display=swap")
+link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Lora")
+link(rel="stylesheet", href="./fonts/font-awesome.min.css")
+link(rel="stylesheet", href="./css/styles.min.css")
+link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")
+section.position-relative.py-4.py-xl-5(style="background-image:url(./resources/fondo_ingresar.png);height: 100%;")
+  .container
+    .titulo
+      center
+        p
+          b
+            font(color="white") BIENVENIDO DE NUEVO TRABAJADOR
+    .row.d-flex.justify-content-center
+      .col-md-6.col-xl-4
+        .card.mb-5
+          .card-body.d-flex.flex-column.align-items-center(style="opacity: 1;background-image: url(./resources/fondo_registro.png);")
+            form.text-center(method="post")
+              .mb-3
+                input.form-control(type="tel", name="numTelefono", placeholder="Celular", inputmode="tel", required)
+              .mb-3
+                input.form-control(type="password", name="password", placeholder="Contraseña", required)
+              p
+                a(href="./registrar.html") ¿No tengo cuenta?
+              .mb-3
+                a.btn.btn-primary.d-block.w-100(role="button", href="trabajador.html", style="background: var(--bs-gray);") INGRESAR
+                a.btn.btn-primary.d-block.w-100(role="button", href="./ingresar.html", style="margin-top: 20px;background: var(--bs-gray);") ATRAS
+script(src="./bootstrap/js/bootstrap.min.js")
+script(src="./js/script.min.js")

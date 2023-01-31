@@ -1,0 +1,44 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0, shrink-to-fit=no')
+  title Registro - Usuario
+  link(rel='stylesheet' href='./bootstrap/css/bootstrap.min.css')
+  link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Anaheim&display=swap')
+  link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lora')
+  link(rel='stylesheet' href='./fonts/font-awesome.min.css')
+  link(rel='stylesheet' href='./fonts/ionicons.min.css')
+  link(rel='stylesheet' href='./css/styles.min.css')
+  link(rel='stylesheet' href='./css/stilosRegistros.css')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css')
+section.position-relative.py-4.py-xl-5(style='background-image:url(./resources/fondo_registro.png);height: 100%;')
+  .container.bg-white(style='padding-top: 10px;padding-bottom: 40px;margin-right: 12px;margin-left: 12px;padding-left: 6px;padding-right: 6px;background-image: url(./resources/fondo_registrar2_2.png);')
+    .row
+      .col-10.col-sm-10.col-md-10.offset-1.offset-sm-1.offset-md-1.text-start.align-content-md-center
+        form(method='post')
+          h1(style='color: #FFFFFF;margin-left: 20px;margin-top: 20px;') M&eacute;todo de pago
+          .form-group.mb-3
+            label.form-label(style='margin-bottom: 10px;color: #FFFFFF;')
+              strong Tipo de tarjeta
+            .form-check
+              input.form-check-input(type='radio')
+              label.form-check-label Cr&eacute;dito
+            .form-check
+              input.form-check-input(type='radio')
+              label.form-check-label(for='formCheck-1') D&eacute;bito
+          .form-group.mb-3
+            label.form-label(style='margin-bottom: 10px;margin-top: 10px;color: #FFFFFF;')
+              strong N&uacute;mero de Tarjeta
+            input#cardNumber.form-control(type='number' style='margin-bottom: 20px;' placeholder='Ingrese el número de su tarjeta')
+          .form-group.mb-3
+            label.form-label(style='margin-bottom: 10px;margin-top: 10px;color: #FFFFFF;')
+              strong CVV
+              br
+            input#cvv.form-control(type='text' placeholder='Ingrese el código CVV de la tarjeta' style='margin-bottom: 20px;' onchange='changePassword();')
+          .row
+            .col-md-6(style='margin-top: 20px;')
+              a.btn.btn-secondary.d-block.d-lg-flex.justify-content-lg-center.w-100(role='button' href='./registrarUsuario.html' style='background: var(--bs-gray);') ATRAS
+            .col-md-6(style='margin-top: 20px;')
+              a#submitButton.btn.btn-primary.d-block.d-lg-flex.justify-content-lg-center.w-100(role='button' href='./ingresarUsuario.html' style='background: var(--bs-gray);') ACEPTAR
+  script(src='./bootstrap/js/bootstrap.min.js')
+  script(src='./js/script.min.js')
