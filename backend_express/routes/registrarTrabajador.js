@@ -8,9 +8,8 @@ const { application } = require('express');
 
 router.get('/', function (req, res, next)
 {
-    res.render('registrarUsuario', { title: 'Express' });
+    res.render('registrarTrabajador', { title: 'Express' });
 });
-
 
 router.post('/', function (req, res, next) {
     connect(function (err, client, done) {
@@ -19,20 +18,20 @@ router.post('/', function (req, res, next) {
       }
       console.log("Ha pasado por aquí");
       console.log(req.body);
-      if (req.body.boton == "continuar")
+      if (req.body.boton == "registro")
       {
-        client.query(`INSERT INTO Cliente VALUES ('${req.body.celular}', '${req.body.nombre}', '${req.body.apellido}', '${req.body.password}', '${req.body.direccion}', '${req.body.correoE}');`, function (err, result) {
-          
+        client.query(`INSERT INTO Trabajador VALUES ('${req.body.celular}', '${req.body.nombres}', '${req.body.apellidos}', '${req.body.password}', '${req.body.direccion}');
+                        INSERT INTO Servicio VALUES ('${req.body.celular}', '${req.body.labor}', '${req.body.descripcion}');`, function (err, result) {
           done(err);
           if (err) {
             return console.error('error running query', err);
           }
-          res.render('registrarUsuario2', { cel: req.body.celular});
+          res.render('ingresarTrabajador', { title: 'Express' });
         });
       }
       else
       {
-        res.render('inicio', { title: 'Express' });
+        res.render('start', { title: 'Express' });
       }
     });
   

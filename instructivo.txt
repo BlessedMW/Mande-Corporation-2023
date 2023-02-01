@@ -1,0 +1,20 @@
+En la carpeta database ejecutar:
+
+=> docker build -t mande_db .
+=> docker run --name mande_db -p 5432:5432 -e POSTGRES_PASSWORD=mysecretpassword -d mande_db
+
+En la carpeta backend_express ejecutar:
+
+=> docker build -t mande_backend .
+
+=> docker run -it --rm -v ${pwd}:/usr/src/app mande_backend /bin/bash
+------- Dentro de la ruta a la que se llegó por el comando anterior, ejecutar:
+------> npm install
+------- Cuando finalice la instalacion ejecutar:
+------> exit
+
+=> docker run -it --rm -p 3000:3000 -v ${pwd}:/usr/src/app --link mande_db:postgres --name mande_app mande_backend
+
+Ahora en el browser:
+http://localhost:3000/start
+

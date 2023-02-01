@@ -23,7 +23,6 @@ router.post('/', function (req, res, next) {
             client.query(`UPDATE Tarjeta SET tipo = '${req.body.radioB}' WHERE celular = '${req.body.celular}';
             UPDATE Tarjeta SET noTarjeta = '${req.body.numero}' WHERE celular = '${req.body.celular}';
             UPDATE Tarjeta SET codigoSeguridad = '${req.body.codigo}' WHERE celular = '${req.body.celular}';`, function (err, result) {
-            //call `done(err)` to release the client back to the pool (or destroy it if there is an error)
             done(err);
             if (err) {
               return console.error('error running query', err);
